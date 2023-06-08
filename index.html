@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop </title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="drag.js" defer></script>
+    <script src="add_reset.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+        
+        <form id="myform">
+        
+        <div class="container">
+            <div class="left">
+            <h3 class="heading">LIST 1</h3>
+                <div class="lists" id="left-list">
+                <!-- New items are added in the left list, items can be dragged and dropped from left to right list-->
+                </div>
+            </div>
+
+            <div class="right">
+            <h3 class="heading">LIST 2</h3>
+                <div class="lists" id="right-list">
+                <!-- Right list is initially empty, items can be dragged and dropped from left list to right list & vice-versa-->
+                </div>
+            </div>
+
+            
+            <input type="text" placeholder="Add item..." id="add" />
+            <!-- New items can be added to the left list using add button-->
+            <button type="submit">Add</button>
+            <!-- Both the lists can be reverted to initial state by clicking the reset button-->
+            <button type="reset">reset</button>
+            
+        </div>
+
+        </form>
+      
+    </div>
+    
+
+  </body>
+</html>
